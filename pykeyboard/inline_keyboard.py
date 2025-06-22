@@ -1,4 +1,3 @@
-from pyrogram.emoji import *
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from typing import List, Union
 
@@ -10,21 +9,19 @@ class InlineKeyboard(InlineKeyboardMarkup):
     _SYMBOL_NEXT_PAGE = '{} ›'
     _SYMBOL_LAST_PAGE = '{} »'
     _LOCALES = {
-        'be_BY': f'{FLAG_BELARUS} Беларуская',          # Belarusian - Belarus
-        'de_DE': f'{FLAG_GERMANY} Deutsch',             # German - Germany
-        'zh_CN': f'{FLAG_CHINA} 中文',                  # Chinese - China
-        # English - United States
-        'en_US': f'{FLAG_UNITED_KINGDOM}  English',
-        'fr_FR': f'{FLAG_FRANCE} Français',             # French - France
-        # Indonesian - Indonesia
-        'id_ID': f'{FLAG_INDONESIA} Bahasa Indonesia',
-        'it_IT': f'{FLAG_ITALY} Italiano',              # Italian - Italy
-        'ko_KR': f'{FLAG_SOUTH_KOREA} 한국어',          # Korean - Korea
-        'tr_TR': f'{FLAG_TURKEY} Türkçe',               # Turkish - Turkey
-        'ru_RU': f'{FLAG_RUSSIA} Русский',              # Russian - Russia
-        'es_ES': f'{FLAG_SPAIN} Español',               # Spanish - Spain
-        'uk_UA': f'{FLAG_UKRAINE} Українська',          # Ukrainian - Ukraine
-        'uz_UZ': f'{FLAG_UZBEKISTAN} Oʻzbekcha',        # Uzbek - Uzbekistan
+        'be_BY': 'Беларуская',          # Belarusian - Belarus
+        'de_DE': 'Deutsch',             # German - Germany
+        'zh_CN': '中文',                # Chinese - China
+        'en_US': 'English',             # English - United States
+        'fr_FR': 'Français',            # French - France
+        'id_ID': 'Bahasa Indonesia',    # Indonesian - Indonesia
+        'it_IT': 'Italiano',            # Italian - Italy
+        'ko_KR': '한국어',              # Korean - Korea
+        'tr_TR': 'Türkçe',              # Turkish - Turkey
+        'ru_RU': 'Русский',             # Russian - Russia
+        'es_ES': 'Español',             # Spanish - Spain
+        'uk_UA': 'Українська',          # Ukrainian - Ukraine
+        'uz_UZ': 'Oʻzbekcha',           # Uzbek - Uzbekistan
     }
 
     def __init__(self, row_width=3):
